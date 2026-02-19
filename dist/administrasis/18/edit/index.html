@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Klinik</title>
+
+    <!-- Font Awesome -->
+    <link href="http://localhost/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <!-- SB Admin 2 CSS -->
+    <link href="http://localhost/css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
+                <div class="sidebar-brand-icon">
+                    <i class="fas fa-hospital"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Klinik</div>
+            </a>
+
+            <hr class="sidebar-divider my-0">
+
+            <!-- Dashboard -->
+            <li class="nav-item ">
+                <a class="nav-link" href="/">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">Data Klinik</div>
+
+            <!-- Dokter -->
+            <li class="nav-item ">
+                <a class="nav-link" href="http://localhost/dokters">
+                    <i class="fas fa-fw fa-user-md"></i>
+                    <span>Dokter</span>
+                </a>
+            </li>
+
+            <!-- Pasien -->
+            <li class="nav-item ">
+                <a class="nav-link" href="http://localhost/pasiens">
+                    <i class="fas fa-fw fa-procedures"></i>
+                    <span>Pasien</span>
+                </a>
+            </li>
+
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">Transaksi</div>
+
+            <!-- Administrasi -->
+            <li class="nav-item active">
+                <a class="nav-link" href="http://localhost/administrasis">
+                    <i class="fas fa-fw fa-file-invoice"></i>
+                    <span>Administrasi</span>
+                </a>
+            </li>
+
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">Laporan</div>
+
+            <li class="nav-item ">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLaporan">
+                    <i class="fas fa-fw fa-chart-bar"></i>
+                    <span>Laporan</span>
+                </a>
+                <div id="collapseLaporan" class="collapse" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="http://localhost/laporan/dokter">Laporan Dokter</a>
+                        <a class="collapse-item" href="http://localhost/laporan/pasien">Laporan Pasien</a>
+                        <a class="collapse-item" href="http://localhost/laporan/administrasi">Laporan Administrasi</a>
+                    </div>
+                </div>
+            </li>
+
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Toggle Sidebar -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+        </ul>
+        <!-- End Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" data-toggle="dropdown">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
+                                <img class="img-profile rounded-circle" src="http://localhost/img/undraw_profile.svg">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Topbar -->
+
+                <!-- Main Content -->
+                <div class="container-fluid">
+                    
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Edit Administrasi</h1>
+    <a href="http://localhost/administrasis" class="btn btn-secondary btn-sm shadow-sm">
+        <i class="fas fa-arrow-left fa-sm"></i> Kembali
+    </a>
+</div>
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Form Edit Administrasi</h6>
+    </div>
+    <div class="card-body">
+        <form action="http://localhost/administrasis/18" method="POST">
+            <input type="hidden" name="_token" value="koJl1xWUNYHSloaN6Smll8GH6k7MQo4R69QD2lDo" autocomplete="off">            <input type="hidden" name="_method" value="PUT">
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Pasien <span class="text-danger">*</span></label>
+                <div class="col-sm-9">
+                    <select name="pasien_id"
+                            class="form-control ">
+                        <option value="">-- Pilih Pasien --</option>
+                                                    <option value="1"
+                                >
+                                Ms. Bethel Cronin
+                            </option>
+                                                    <option value="2"
+                                >
+                                Ms. Charlotte Rippin
+                            </option>
+                                                    <option value="3"
+                                selected>
+                                Mr. Stan Waters
+                            </option>
+                                                    <option value="4"
+                                >
+                                Phoebe Bechtelar
+                            </option>
+                                                    <option value="5"
+                                >
+                                Tamia DuBuque
+                            </option>
+                                                    <option value="6"
+                                >
+                                Benton Rosenbaum
+                            </option>
+                                                    <option value="7"
+                                >
+                                Dr. Nils Abbott
+                            </option>
+                                                    <option value="8"
+                                >
+                                Shaun Gottlieb
+                            </option>
+                                                    <option value="9"
+                                >
+                                Major Shields
+                            </option>
+                                                    <option value="10"
+                                >
+                                Gloria Rodriguez
+                            </option>
+                                                    <option value="11"
+                                >
+                                Eddie Krajcik
+                            </option>
+                                                    <option value="12"
+                                >
+                                Dr. Ambrose Boyer
+                            </option>
+                                                    <option value="13"
+                                >
+                                Mozell Graham
+                            </option>
+                                                    <option value="14"
+                                >
+                                Myrtie Kris
+                            </option>
+                                                    <option value="15"
+                                >
+                                Maxine Dare
+                            </option>
+                                                    <option value="16"
+                                >
+                                Verlie Miller Jr.
+                            </option>
+                                                    <option value="17"
+                                >
+                                Helmer Kassulke
+                            </option>
+                                                    <option value="18"
+                                >
+                                Dominique Abernathy
+                            </option>
+                                                    <option value="19"
+                                >
+                                Kraig Brown
+                            </option>
+                                                    <option value="20"
+                                >
+                                Prof. Joyce Dickinson
+                            </option>
+                                            </select>
+                                    </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Dokter <span class="text-danger">*</span></label>
+                <div class="col-sm-9">
+                    <select name="dokter_id"
+                            class="form-control ">
+                        <option value="">-- Pilih Dokter --</option>
+                                                    <option value="1"
+                                >
+                                dr. Jeremy Cummings - Gigi
+                            </option>
+                                                    <option value="2"
+                                >
+                                dr. Prof. Julien Nicolas - Kandungan
+                            </option>
+                                                    <option value="3"
+                                >
+                                dr. Miss Brandyn Homenick - Jantung
+                            </option>
+                                                    <option value="4"
+                                >
+                                dr. Caroline Strosin - Mata
+                            </option>
+                                                    <option value="5"
+                                >
+                                dr. Salma Hamill - Anak
+                            </option>
+                                                    <option value="6"
+                                >
+                                dr. Lillian Morissette - Kandungan
+                            </option>
+                                                    <option value="7"
+                                >
+                                dr. Nicolette Lowe - Anak
+                            </option>
+                                                    <option value="8"
+                                selected>
+                                dr. Dayna Kunde - Kulit
+                            </option>
+                                                    <option value="9"
+                                >
+                                dr. Noelia Volkman - THT
+                            </option>
+                                                    <option value="10"
+                                >
+                                dr. Dr. Ashtyn Upton Jr. - Mata
+                            </option>
+                                            </select>
+                                    </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Tanggal Periksa <span class="text-danger">*</span></label>
+                <div class="col-sm-9">
+                    <input type="date" name="tanggal_periksa"
+                           class="form-control "
+                           value="2026-01-23">
+                                    </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Keluhan <span class="text-danger">*</span></label>
+                <div class="col-sm-9">
+                    <textarea name="keluhan" rows="3"
+                              class="form-control ">Mual dan pusing</textarea>
+                                    </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Diagnosa</label>
+                <div class="col-sm-9">
+                    <textarea name="diagnosa" rows="3"
+                              class="form-control ">Dermatitis</textarea>
+                                    </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Biaya</label>
+                <div class="col-sm-9">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Rp</span>
+                        </div>
+                        <input type="number" name="biaya"
+                               class="form-control "
+                               value="100000.00" min="0">
+                                            </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label">Status <span class="text-danger">*</span></label>
+                <div class="col-sm-9">
+                    <select name="status"
+                            class="form-control ">
+                        <option value="Menunggu" selected>Menunggu</option>
+                        <option value="Selesai"  >Selesai</option>
+                        <option value="Batal"    >Batal</option>
+                    </select>
+                                    </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-9 offset-sm-3">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-save mr-1"></i> Update
+                    </button>
+                    <a href="http://localhost/administrasis" class="btn btn-secondary">
+                        <i class="fas fa-times mr-1"></i> Batal
+                    </a>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+                </div>
+
+            </div>
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Klinik 2026</span>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+        <!-- End Content Wrapper -->
+    </div>
+
+    <!-- Scripts -->
+    <script src="http://localhost/vendor/jquery/jquery.min.js"></script>
+    <script src="http://localhost/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="http://localhost/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="http://localhost/js/sb-admin-2.min.js"></script>
+</body>
+</html>
