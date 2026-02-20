@@ -77,7 +77,8 @@ h1 {
     margin-bottom: 25px;
 }
 
-#filter-select, #delete-all-btn {
+#filter-select,
+#delete-all-btn {
     background-color: #334155;
     color: #f8fafc;
     border: none;
@@ -116,7 +117,8 @@ td {
     font-size: 0.95rem;
 }
 
-.status-btn, .delete-btn {
+.status-btn,
+.delete-btn {
     padding: 6px 12px;
     border: none;
     border-radius: 4px;

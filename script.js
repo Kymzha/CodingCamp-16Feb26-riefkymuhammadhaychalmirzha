@@ -9,9 +9,9 @@ const todoTable = document.getElementById('todo-table');
 
 let todos = [];
 
-todoForm.addEventListener('submit', function(e) {
+todoForm.addEventListener('submit', function (e) {
     e.preventDefault();
-    
+
     const taskText = taskInput.value.trim();
     const dateValue = dateInput.value;
 
@@ -25,10 +25,10 @@ todoForm.addEventListener('submit', function(e) {
     };
 
     todos.push(newTodo);
-    
+
     taskInput.value = '';
     dateInput.value = '';
-    
+
     renderTodos();
 });
 
@@ -56,7 +56,7 @@ function deleteTodo(id) {
 
 function renderTodos() {
     todoTbody.innerHTML = '';
-    
+
     const filterValue = filterSelect.value;
     const filteredTodos = todos.filter(todo => {
         if (filterValue === 'all') return true;
